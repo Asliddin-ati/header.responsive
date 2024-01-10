@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#202020]">
+
+  <header class="py-5 bg-[#323232B2]">
+      <div class="max-w-[1229px] mx-auto flex items-center justify-between px-5">
+          <a href="">
+              <img src="./img/Logos.svg" alt="">
+          </a>
+          <ul class="gap-[56px] items-center md:flex hidden">
+              <li><a href="#" class="text-[#DEDEDE] text-lg font-bold ">Home</a></li>
+              <li><a href="#" class="text-[#DEDEDE] text-lg font-bold ">Work</a></li>
+              <li><a href="#" class="text-[#DEDEDE] text-lg font-bold ">Contact</a></li>
+          </ul>
+          <button id="header-hamburger-menu-1" class="md:hidden flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                  <path d="M1 17H22M1 1H22H1ZM1 9H22H1Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+              </svg>
+          </button>
+      </div>
+      <div id="header-responsive-menu-1" class="fixed top-0 transition-all -left-full w-full h-screen bg-black ">
+          <div class="flex justify-between border-b border-2 py-8 px-5">
+              <a href="#">
+                  <img src="./img/Logos.svg" alt="">
+              </a>
+              <button id="header-responsive-close-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+              </button>
+          </div>
+          <ul class="flex flex-col gap-5 items-center pt-4">
+              <li><a class="text-white text-base font-medium leading-6" href="#">Home</a></li>
+              <li><a class="text-white text-base font-medium leading-6" href="#">Work</a></li>
+              <li><a class="text-white text-base font-medium leading-6" href="#">Contact</a></li>
+          </ul>
+      </div>
+  </header>
+
+  <script src="./app.js"></script>
+</body>
+</html>
